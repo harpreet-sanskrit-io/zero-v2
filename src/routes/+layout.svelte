@@ -1,5 +1,12 @@
-<script>
-  import "../app.css";
+<script lang="ts">
+import TopNav from "$lib/common/TopNav.svelte"
+  import "../app.css"
 </script>
 
-<slot />
+<div class="isolate bg-gray-100 max-h-screen">
+  <TopNav/>
+  <main>
+    <slot />
+  </main>
+
+</div>
